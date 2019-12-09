@@ -1,0 +1,26 @@
+{
+    "name": "sohel1999/activity",
+    "license": "",
+    "type": "project",
+    "authors": [
+        {
+            "name": "sohel mia",
+            "email": "sohelcse1999@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sohel1999\\Activity\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sohel1999\\Activity\\ActivityServiceProvider"
+            ]
+        }
+    }
+}
