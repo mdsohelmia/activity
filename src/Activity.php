@@ -1,16 +1,11 @@
 <?php
 
-
 namespace Sohel1999\Activity;
 
-
-use Sohel1999\Activity\ActivityLog;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Request;
 
-trait  Activity
+trait Activity
 {
-
     public static function log($action, $model)
     {
         //who
@@ -25,12 +20,12 @@ trait  Activity
         $payload = json_encode($model->getDirty());
 
         ActivityLog::create([
-            'user' => $user,
+            'user'       => $user,
             'id_address' => $ipAddress,
             'model_name' => $modelName,
-            'model_id' => $modelId,
-            'payload' => $payload,
-            'action' => $action
+            'model_id'   => $modelId,
+            'payload'    => $payload,
+            'action'     => $action,
         ]);
     }
 

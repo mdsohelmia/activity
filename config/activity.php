@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'user_name_column' => 'name'
+    'user_name_column' => 'name',
 ];
